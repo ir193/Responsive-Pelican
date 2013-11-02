@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% block content_title %}
+<h4 class="content-archive">Tags: </h4>
+{% endblock %}
+<ul>
+{% for tag, articles in tags %}
+    <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block nav %}
+<a href="{{ SITEURL }}">Blog</a> ››Tag: <a href="{{ tag.url }}">{{ tag }}</a>
+{% endblock %}
+
+{% block content_title %}
+<h4 class="content-archive">Articles tagged with <span style="color:rgb(0,102,204)">{{ tag }}</span>: </h4>
+{% endblock %}
+

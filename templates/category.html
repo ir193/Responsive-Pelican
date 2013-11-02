@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+
+{% block nav %}
+<a href="{{ SITEURL }}">Blog</a> ››Category: <a href="{{ category.url }}">{{ category }}</a>
+{% endblock %}
+
+{% block content_title %}
+<h4 class="content-archive">Articles in the <span style="color:rgb(0,102,204)">{{ category }}</span> category</h4>
+{% endblock %}
+

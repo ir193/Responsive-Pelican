@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+{{ super() }}
+<ul>
+{% for article in articles_page.object_list %}
+<li class="posts"><article class="post hentry">
+	<header>
+		<h2 class="post-title" >
+			<a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a>
+		</h2>
+		<div class="post-info">
+			<span class="post-lable">Post in</span>
+			<abbr class="date" title="{{ article.date.isoformat() }}"> 
+				<a href="{{ SITEURL }}/{{ article.date|strftime("archive/%Y/%b/index.html") }}">{{ article.locale_date }} </a>
+			</abbr>
+			<!-- COMMENTS -->
+		</div>
+	</header>
+	<div class="summary">{{ article.summary }}</div>
+	<footer>
+		<span class="post-lable">Category:</span>
+		<abbr class="category">
+			<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+		</abbr>
+	</footer>
+	<hr />
+</article></li>
+{% endfor %}
+</ul>
+{% include 'pagination.html' %}
+{% endblock content%}
+

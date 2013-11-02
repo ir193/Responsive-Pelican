@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{% block content_title %}
+<h4 class="content-archive">Categories: </h4>
+{% endblock %}
+<ul>
+{% for category, articles in categories %}
+    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
