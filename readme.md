@@ -11,4 +11,4 @@ Responsive Pelican is a [pelican](https://github.com/getpelican/pelican) theme w
 Screenshot
 ----------
 
-  ![Screenshot](screenshot.png)
+  ![Screenshot](screenshot.PNG)
