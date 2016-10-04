@@ -6,8 +6,8 @@
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITE_URL }}/theme/css/style.css' type="text/css" media="all" />
-    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITE_URL }}/theme/css/highlight.css' type="text/css" media="all" />
+    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/style.css' type="text/css" media="all" />
+    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/highlight.css' type="text/css" media="all" />
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     {% endif %}
@@ -40,7 +40,7 @@
 <div id="container" class="hfeed">
     <header id="header" >
         <div id="logo">
-                <h1><img src="{{ SITE_URL }}/theme/image/default-logo.png" width="300" height="100" alt="小铱的故事" />
+                <h1><img src="{{ SITEURL }}/theme/image/default-logo.png" width="300" height="100" alt="小铱的故事" />
                 {{ SITENAME }}</h1>
         </div> <!-- /#logo-->
         <nav id="menu" class="main-nav"><ul class="menu">
