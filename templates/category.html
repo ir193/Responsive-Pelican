@@ -1,7 +1,7 @@
 {% extends "index.html" %}
 
 {% block nav %}
-<a href="{{ SITEURL }}">Blog</a> ››Category: <a href="{{ category.url }}">{{ category }}</a>
+<a href="{{ SITEURL }}">Blog</a> ››Category: <a href="../{{ category.url }}">{{ category }}</a>
 {% endblock %}
 
 {% block content_title %}

@@ -13,7 +13,7 @@
     <div class="post-meta">
         <span class="meta-prep">Post in</span>
         <abbr class="date" title="{{ article.date.isoformat() }}"> 
-            <a href="{{ SITEURL }}/{{ article.date|strftime("archive/%Y/%b/index.html") }}">{{ article.locale_date }} </a>
+            <a href="{{ SITEURL }}/{{ article.date|strftime("archive/%Y/%m/index.html") }}">{{ article.locale_date }} </a>
         </abbr>
         <span class="meta-prep"> |Tags</span>
             {% for tag in article.tags %}
