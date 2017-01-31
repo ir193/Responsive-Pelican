@@ -32,7 +32,7 @@
     {% if TAG_FEED_RSS and tag %}
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
-    
+
     {% endblock head %}
 </head>
 
@@ -79,7 +79,7 @@
             {% block searchform %}
             <section id="widget-search" class="widget-wrapper widget_search">
 
-                <form id="searchform" action="http://www.google.com/search" method="get">
+                <form id="searchform" action="https://www.google.com/search" method="get">
                     <input id="q" class="field" type="text" placeholder="Search Blog" name="q" ></input>
                     <input id="ie" name="ie" type="hidden" value="utf-8" ></input>
                     <input id="oe" name="oe" type="hidden" value="utf-8" ></input>
@@ -128,7 +128,7 @@
                 </ul>
             </section>
             {% endblock %}
-            
+
         </section><!-- widgets -->
         {% endblock widgets %}
     </section><!-- /#wrapper -->
@@ -144,16 +144,16 @@
         </div>
 
         <div class="grid col-300 copyright" >
-            <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
-                <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"></img>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+                <img src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"></img>
             </a>
         </div>
         <div class="grid col-300 ">
 
         </div>
         <div class="grid col-300 fit powered">
-            Powered by <a href="http://getpelican.com/">Pelican</a> <br />
-            which takes great advantage of <a href="http://python.org">Python</a>
+            Powered by <a href="https://getpelican.com/">Pelican</a> <br />
+            which takes great advantage of <a href="https://python.org">Python</a>
         </div>
     </section></footer>
     {% endblock footer %}
