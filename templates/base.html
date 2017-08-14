@@ -5,9 +5,9 @@
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/style.css' type="text/css" media="all" />
-    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/highlight.css' type="text/css" media="all" />
+    <link rel="stylesheet" id="responsive-style-css2"  href='{{ SITEURL }}/theme/css/highlight.css' type="text/css" media="all" />
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     {% endif %}
@@ -145,7 +145,7 @@
 
         <div class="grid col-300 copyright" >
             <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
-                <img src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"></img>
+                <img src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"/>
             </a>
         </div>
         <div class="grid col-300 ">
@@ -154,6 +154,7 @@
         <div class="grid col-300 fit powered">
             Powered by <a href="https://getpelican.com/">Pelican</a> <br />
             which takes great advantage of <a href="https://python.org">Python</a>
+            Theme: <a href="https://github.com/rozie/Responsive-Pelican/">Responsive-Pelican</a>
         </div>
     </section></footer>
     {% endblock footer %}
