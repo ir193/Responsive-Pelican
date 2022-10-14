@@ -12,8 +12,8 @@
     {{ translations.translations_for(article) }}
     <div class="post-meta">
         <span class="meta-prep">Post in</span>
-        <abbr class="date" title="{{ article.date.isoformat() }}"> 
-            <a href="{{ SITEURL }}/{{ article.date|strftime("archive/%Y/%b/index.html") }}">{{ article.locale_date }} </a>
+        <abbr class="date" title="{{ article.date.isoformat() }}">
+            <a href="{{ SITEURL }}/{{ article.date|strftime("archive/%Y/%m/index.html") }}">{{ article.locale_date }} </a>
         </abbr>
         <span class="meta-prep"> |Tags</span>
             {% for tag in article.tags %}
@@ -37,7 +37,7 @@
         var disqus_identifier = "{{ article.url }}";
         (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+        dsq.src = 'https://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
         </script>

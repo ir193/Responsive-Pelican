@@ -5,9 +5,9 @@
     {% block head %}
     <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/style.css' type="text/css" media="all" />
-    <link rel="stylesheet" id="responsive-style-css"  href='{{ SITEURL }}/theme/css/highlight.css' type="text/css" media="all" />
+    <link rel="stylesheet" id="responsive-style-css2"  href='{{ SITEURL }}/theme/css/highlight.css' type="text/css" media="all" />
     {% if FEED_ALL_ATOM %}
     <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Full Atom Feed" />
     {% endif %}
@@ -32,7 +32,7 @@
     {% if TAG_FEED_RSS and tag %}
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS|format(tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
-    
+
     {% endblock head %}
 </head>
 
@@ -40,7 +40,7 @@
 <div id="container" class="hfeed">
     <header id="header" >
         <div id="logo">
-                <h1><img src="{{ SITEURL }}/theme/image/default-logo.png" width="300" height="100" alt="{{ SITENAME }}" />
+                <h1><img src="{{ SITEURL }}/theme/image/default-logo.png" width="300" height="100" alt="小铱的故事" />
                 {{ SITENAME }}</h1>
         </div> <!-- /#logo-->
         <nav id="menu" class="main-nav"><ul class="menu">
@@ -79,7 +79,7 @@
             {% block searchform %}
             <section id="widget-search" class="widget-wrapper widget_search">
 
-                <form id="searchform" action="http://www.google.com/search" method="get">
+                <form id="searchform" action="https://www.google.com/search" method="get">
                     <input id="q" class="field" type="text" placeholder="Search Blog" name="q" ></input>
                     <input id="ie" name="ie" type="hidden" value="utf-8" ></input>
                     <input id="oe" name="oe" type="hidden" value="utf-8" ></input>
@@ -128,7 +128,7 @@
                 </ul>
             </section>
             {% endblock %}
-            
+
         </section><!-- widgets -->
         {% endblock widgets %}
     </section><!-- /#wrapper -->
@@ -144,16 +144,17 @@
         </div>
 
         <div class="grid col-300 copyright" >
-            <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
-                <img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"></img>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
+                <img src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" style="border-width:0" alt="知识共享许可协议"/>
             </a>
         </div>
         <div class="grid col-300 ">
 
         </div>
         <div class="grid col-300 fit powered">
-            Powered by <a href="http://getpelican.com/">Pelican</a> <br />
-            which takes great advantage of <a href="http://python.org">Python</a>
+            Powered by <a href="https://getpelican.com/">Pelican</a> <br />
+            which takes great advantage of <a href="https://python.org">Python</a> <br />
+            Theme: <a href="https://github.com/rozie/Responsive-Pelican/">Responsive-Pelican</a>
         </div>
     </section></footer>
     {% endblock footer %}
